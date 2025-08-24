@@ -5,6 +5,9 @@
 # 웹사이트의 기본 URL입니다. Github Pages 배포 시 "https://<username>.github.io/" 형식으로 설정합니다.
 baseURL = "https://quartzs2.github.io/"
 
+# 사이트 언어 설정입니다. (한국어)
+languageCode = "ko"
+
 # 웹사이트의 전체 제목입니다. 브라우저 탭 등에 표시됩니다.
 title = "경계를 넘는 개발자"
 
@@ -73,7 +76,7 @@ author = "Me"
 images = [ "<link or path of image for opengraph, twitter-cards>" ]
 
 # 날짜 표시 형식입니다. (Go 언어의 날짜 형식 규칙을 따름: "January 2, 2006")
-DateFormat = "January 2, 2006"
+DateFormat = "2006년 1월 2일"
 
 # 기본 테마 설정입니다. 'auto'는 방문자의 시스템 설정을 따릅니다. ('light', 'dark'로 고정 가능)
 defaultTheme = "auto"
@@ -253,25 +256,31 @@ limit = 30
 # 메인 메뉴에 표시될 항목을 정의합니다.
 [[menu.main]]
 # 메뉴 항목의 고유 식별자입니다.
-identifier = "categories"
+identifier = "search"
 # 메뉴에 표시될 이름입니다.
-name = "categories"
+name = "검색"
 # 클릭 시 이동할 URL입니다.
-url = "/categories/"
+url = "/search/"
 # 메뉴 항목의 순서입니다. 숫자가 작을수록 앞에 배치됩니다.
+weight = 5
+
+[[menu.main]]
+identifier = "categories"
+name = "카테고리"
+url = "/categories/"
 weight = 10
 
 [[menu.main]]
-identifier = "tags"
-name = "tags"
-url = "/tags/"
-weight = 20
+identifier = "archive"
+name = "아카이브"
+url = "/archive/"
+weight = 15
 
 [[menu.main]]
-identifier = "search"
-name = "search"
-url = "/search/"
-weight = 5
+identifier = "tags"
+name = "태그"
+url = "/tags/"
+weight = 20
 
 
 # ------------------------------------------------------------------------------------
