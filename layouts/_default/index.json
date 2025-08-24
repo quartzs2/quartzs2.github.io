@@ -1,0 +1,25 @@
+{{- /* Custom search index with sections: tags, categories, posts */ -}}
+{{- $.Scratch.Set "tags" (slice) -}}
+{{- range $term, $taxonomy := site.Taxonomies.tags -}}
+  {{- $.Scratch.Add "tags" (dict "name" $term "permalink" $taxonomy.Page.Permalink "count" (len $taxonomy.Pages)) -}}
+{{- end -}}
+
+{{- $.Scratch.Set "categories" (slice) -}}
+{{- range $term, $taxonomy := site.Taxonomies.categories -}}
+  {{- $.Scratch.Add "categories" (dict "name" $term "permalink" $taxonomy.Page.Permalink "count" (len $taxonomy.Pages)) -}}
+{{- end -}}
+
+{{- $.Scratch.Set "posts" (slice) -}}
+{{- range site.RegularPages -}}
+  {{- if and (not .Params.searchHidden) (ne .Layout `archives`) (ne .Layout `search`) -}}
+    {{- $tags := slice -}}
+    {{- with .Params.tags -}}{{- $tags = . -}}{{- end -}}
+    {{- $categories := slice -}}
+    {{- with .Params.categories -}}{{- $categories = . -}}{{- end -}}
+    {{- $.Scratch.Add "posts" (dict "title" .Title "content" .Plain "permalink" .Permalink "summary" .Summary "tags" $tags "categories" $categories) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- dict "tags" ($.Scratch.Get "tags") "categories" ($.Scratch.Get "categories") "posts" ($.Scratch.Get "posts") | jsonify -}}
+
+

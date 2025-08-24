@@ -1,0 +1,93 @@
+{{- define "main" }}
+
+<header class="page-header">
+  <h1>
+    {{- (printf "%s&nbsp;" .Title ) | htmlUnescape -}}
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="28"
+      height="28"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <circle cx="11" cy="11" r="8"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description }}</div>
+  {{- end }} {{- if not (.Param "hideMeta") }}
+  <div class="post-meta">{{- partial "translation_list.html" . -}}</div>
+  {{- end }}
+</header>
+
+<div id="searchbox">
+  <input id="searchInput" autofocus placeholder="{{ .Params.placeholder | default (printf "%s ↵"
+  .Title) }}" aria-label="search" type="search" autocomplete="off" maxlength="64">
+  <button id="searchClear" type="button" aria-label="clear search" title="clear">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="2"
+      stroke="currentColor"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+</div>
+
+<div id="searchTabs" style="margin: 0.5rem 0 1rem; display: flex; gap: 0.5rem">
+  <button type="button" class="search-tab" data-tab="posts">글</button>
+  <button type="button" class="search-tab" data-tab="tags">태그</button>
+  <button type="button" class="search-tab" data-tab="categories">카테고리</button>
+  <script>
+    // 기본 탭: 글
+    document.addEventListener("DOMContentLoaded", function () {
+      const setActive = (key) => {
+        const sections = {
+          posts: document.getElementById("search-section-posts"),
+          tags: document.getElementById("search-section-tags"),
+          categories: document.getElementById("search-section-categories"),
+        };
+        Object.keys(sections).forEach(
+          (k) => (sections[k].style.display = k === key ? "block" : "none")
+        );
+        document.querySelectorAll("#searchTabs .search-tab").forEach((btn) => {
+          if (btn.dataset.tab === key) {
+            btn.classList.add("active");
+          } else {
+            btn.classList.remove("active");
+          }
+        });
+      };
+      document.querySelectorAll("#searchTabs .search-tab").forEach((btn) => {
+        btn.addEventListener("click", () => setActive(btn.dataset.tab));
+      });
+      setActive("posts");
+    });
+  </script>
+</div>
+
+<div id="searchSections">
+  <section id="search-section-tags" style="display: none">
+    <h2>태그</h2>
+    <ul id="resultsTags" aria-label="tag search results"></ul>
+  </section>
+  <section id="search-section-categories" style="display: none">
+    <h2>카테고리</h2>
+    <ul id="resultsCategories" aria-label="category search results"></ul>
+  </section>
+  <section id="search-section-posts">
+    <h2>글</h2>
+    <ul id="resultsPosts" aria-label="post search results"></ul>
+  </section>
+  <div id="noResultsOverall" style="display: none; margin-top: 1rem">검색 결과가 없습니다.</div>
+  <ul id="searchResults" style="display: none"></ul>
+</div>
+
+{{- end }}{{/* end main */}}

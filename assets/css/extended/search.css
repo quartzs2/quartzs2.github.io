@@ -1,0 +1,121 @@
+/* Search page tabs */
+#searchTabs {
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+#searchTabs .search-tab {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--entry);
+  color: var(--primary);
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  outline: none;
+}
+
+#searchTabs .search-tab:hover {
+  border-color: var(--primary);
+  background: color-mix(in srgb, var(--primary) 10%, var(--entry));
+}
+
+#searchTabs .search-tab.active {
+  background: var(--primary);
+  color: var(--theme);
+  border-color: var(--primary);
+}
+
+#searchTabs .search-tab:focus-visible {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 40%, transparent);
+}
+
+/* Section headers and lists */
+#searchSections h2 {
+  font-size: 1.1rem;
+  margin: 0.75rem 0 0.25rem;
+}
+
+#searchSections ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#searchSections .post-entry {
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+#searchSections .post-entry .entry-header {
+  font-weight: 600;
+}
+
+#searchSections .post-entry .entry-content {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-top: 0.25rem;
+}
+
+#searchSections .post-entry:hover {
+  background: color-mix(in srgb, var(--primary) 6%, transparent);
+}
+
+#searchSections .no-results {
+  color: var(--secondary);
+  padding: 0.25rem 0;
+}
+
+/* Highlighted matches */
+mark {
+  background: #ffe58f;
+  color: inherit;
+  padding: 0 0.1em;
+  border-radius: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  mark {
+    background: rgba(255, 230, 120, 0.35);
+  }
+}
+
+/* Search input clear (custom X) */
+#searchbox {
+  position: relative;
+}
+
+#searchInput::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#searchInput {
+  padding-right: 2rem;
+}
+
+#searchClear {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+  border: none;
+  background: none;
+  color: var(--primary);
+  opacity: 0.7;
+  cursor: pointer;
+  display: none;
+}
+
+#searchClear:hover {
+  opacity: 1;
+}
+
+#searchClear svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+}

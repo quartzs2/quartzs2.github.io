@@ -229,14 +229,15 @@ url = "https://github.com/quartzs2"
 
 
 # --- 검색 기능(Fuse.js) 설정 (주석 처리됨) ---
-# [params.fuseOpts]
-# isCaseSensitive = false # 대소문자 구분 여부
-# shouldSort = true # 검색 결과 정렬 여부
-# location = 0
-# distance = 1_000
-# threshold = 0.4 # 검색 정확도 (0.0: 완전 일치, 1.0: 모든 결과)
-# minMatchCharLength = 0
-# keys = [ "title", "permalink", "summary", "content" ] # 검색 대상 필드
+[params.fuseOpts]
+isCaseSensitive = false # 대소문자 구분 여부
+shouldSort = true # 검색 결과 정렬 여부
+location = 0
+distance = 1000
+threshold = 0.4 # 검색 정확도 (0.0: 완전 일치, 1.0: 모든 결과)
+minMatchCharLength = 1
+keys = [ "title", "permalink", "summary", "content" ] # 검색 대상 필드
+limit = 30
 
 
 # ------------------------------------------------------------------------------------
@@ -260,6 +261,12 @@ name = "tags"
 url = "/tags/"
 weight = 20
 
+[[menu.main]]
+identifier = "search"
+name = "search"
+url = "/search/"
+weight = 5
+
 
 # ------------------------------------------------------------------------------------
 # 마크다운 렌더링 설정
@@ -277,5 +284,12 @@ noClasses = false
   [caches.images]
     # 캐시된 이미지가 저장될 디렉토리입니다.
     dir = ':cacheDir/images'
+
+
+# ------------------------------------------------------------------------------------
+# 출력 포맷 설정
+# ------------------------------------------------------------------------------------
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 
 
