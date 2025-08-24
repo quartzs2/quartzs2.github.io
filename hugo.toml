@@ -9,7 +9,7 @@ baseURL = "https://quartzs2.github.io/"
 languageCode = "ko"
 
 # 웹사이트의 전체 제목입니다. 브라우저 탭 등에 표시됩니다.
-title = "경계를 넘는 개발자"
+title = "quartzs2의 blog"
 
 # 사용할 Hugo 테마의 이름입니다.
 theme = "PaperMod"
@@ -61,10 +61,10 @@ minifyOutput = true
 env = "production"
 
 # 웹사이트 제목입니다. params 내의 title은 주로 SEO나 테마 내에서 사용됩니다.
-title = "경계를 넘는 개발자"
+title = "quartzs2의 blog"
 
 # 웹사이트에 대한 설명입니다. 검색 엔진 결과(SEO)에 표시됩니다.
-description = "앱인가, 웹인가? 그 사이를 넘나드는 개발자, quartzs2의 블로그입니다."
+description = "앱같은 웹을 만드는걸 좋아하는, quartzs2의 블로그입니다."
 
 # 웹사이트의 주요 키워드입니다. SEO에 사용됩니다.
 keywords = [ "Blog", "Portfolio", "PaperMod" ]
@@ -144,7 +144,7 @@ safari_pinned_tab = "<link / abs url>"
 # --- 로고/사이트 이름 설정 ---
 [params.label]
 # 헤더 좌측 상단에 표시될 텍스트입니다.
-text = "경계를 넘는 개발자"
+text = "quartzs2의 blog"
 
 # 텍스트 앞에 표시될 아이콘 이미지 경로입니다.
 icon = "/apple-touch-icon.png"
@@ -192,8 +192,7 @@ url = "tags"
 # --- 일반 홈페이지 정보 설정 (프로필 모드 비활성화 시) ---
 [params.homeInfoParams]
 # 홈페이지에 표시될 큰 제목입니다.
-Title = """앱인가, 웹인가? 그 사이를 넘나드는 프론트엔드 개발자  
-천승현입니다 👋"""
+Title = "앱같은 웹을 만드는 걸 좋아하는 프론트엔드 개발자 천승현입니다 👋"
 
 # 제목 아래에 표시될 내용입니다.
 Content = "email: csh001231@gmail.com"

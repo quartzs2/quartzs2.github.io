@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>검색 on 경계를 넘는 개발자</title>
+    <title>검색 on quartzs2의 blog</title>
     <link>http://localhost:1313/search/</link>
-    <description>Recent content in 검색 on 경계를 넘는 개발자</description>
+    <description>Recent content in 검색 on quartzs2의 blog</description>
     <image>
-      <title>경계를 넘는 개발자</title>
+      <title>quartzs2의 blog</title>
       <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>

@@ -4,3 +4,18 @@
   --main-width: 768px;
   --nav-width: 768px;
 }
+
+/* 메인 페이지 제목의 높이 제한 해제 및 단어 단위 줄바꿈 설정 */
+.first-entry .entry-header h1 {
+  word-break: keep-all;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+@media (max-width: 768px) {
+  .first-entry .entry-header {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    max-height: none;
+  }
+}
