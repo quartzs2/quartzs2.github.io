@@ -23,12 +23,13 @@ buildFuture = false
 # 빌드 시 만료된 게시물을 포함할지 여부입니다. (false: 포함 안 함)
 buildExpired = false
 
-# Google Analytics 추적 ID입니다. 현재는 주석 처리되어 비활성화 상태입니다.
-# googleAnalytics = "UA-123-45"
+# Google Analytics 추적 ID입니다. (GA4 측정 ID 형식: "G-XXXXXXXXXX")
+# 프로덕션에서만 스크립트가 삽입됩니다. (테마의 layouts/partials/head.html 참고)
+# HTML에 gtag 스니펫을 직접 넣었다면 제거하여 중복 집계를 방지하세요.
+googleAnalytics = "G-03B7GYGYJC"
 
 # 코드 블록 하이라이팅에 Pygments CSS 클래스를 사용할지 여부입니다.
 pygmentsUseClasses = true
-
 
 # ------------------------------------------------------------------------------------
 # 페이지네이션 설정
@@ -276,3 +277,5 @@ noClasses = false
   [caches.images]
     # 캐시된 이미지가 저장될 디렉토리입니다.
     dir = ':cacheDir/images'
+
+
