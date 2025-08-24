@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>일반 on 경계를 넘는 개발자</title>
-    <link>https://quartzs2.github.io/categories/%EC%9D%BC%EB%B0%98/</link>
+    <link>http://localhost:1313/categories/%EC%9D%BC%EB%B0%98/</link>
     <description>Recent content in 일반 on 경계를 넘는 개발자</description>
     <image>
       <title>경계를 넘는 개발자</title>
-      <url>https://quartzs2.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://quartzs2.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.148.2</generator>
     <language>ko</language>
     <lastBuildDate>Sun, 24 Aug 2025 05:15:27 +0900</lastBuildDate>
-    <atom:link href="https://quartzs2.github.io/categories/%EC%9D%BC%EB%B0%98/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/%EC%9D%BC%EB%B0%98/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>부트캠프 끝나기 하루 전</title>
-      <link>https://quartzs2.github.io/posts/a-day-before-the-end-of-boot-camp/a-day-before-the-end-of-boot-camp/</link>
+      <link>http://localhost:1313/posts/a-day-before-the-end-of-boot-camp/a-day-before-the-end-of-boot-camp/</link>
       <pubDate>Sun, 24 Aug 2025 05:15:27 +0900</pubDate>
-      <guid>https://quartzs2.github.io/posts/a-day-before-the-end-of-boot-camp/a-day-before-the-end-of-boot-camp/</guid>
+      <guid>http://localhost:1313/posts/a-day-before-the-end-of-boot-camp/a-day-before-the-end-of-boot-camp/</guid>
       <description>&lt;p&gt;부트캠프 시작 전, 부트캠프 베이스캠프에서 글을 작성할때가 엊그제같은데 어느새 끝나기 직전을 앞두고 있습니다.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://tisof.tistory.com/6&#34;&gt;개발자는 문제를 해결하는 사람이다&lt;/a&gt;(그때 작성한 글인데, 이 글만 보셔도 됩니다.)&lt;/p&gt;
 &lt;h2 id=&#34;부트캠프-시작-전&#34;&gt;부트캠프 시작 전&lt;/h2&gt;

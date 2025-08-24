@@ -1,0 +1,6 @@
+:root {
+  /* Make total container width 800px: max-width = var(--main-width) + 2 * var(--gap)
+       Default gap is 24px, so set to 800 - 48 = 752px */
+  --main-width: 768px;
+  --nav-width: 768px;
+}
