@@ -11,14 +11,10 @@
             "id": "17257a391a21a2c7",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "a-day-before-the-end-of-boot-camp/a-day-before-the-end-of-boot-camp.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "a-day-before-the-end-of-boot-camp"
+              "title": "새 탭"
             }
           }
         ]
@@ -171,10 +167,18 @@
   },
   "active": "17257a391a21a2c7",
   "lastOpenFiles": [
+    "bootcamp-eve/index.md",
+    "initial-content/images/잔디.png",
+    "initial-content/index.md",
+    "initial-content/images",
+    "initial-content",
+    "a-day-before-the-end-of-boot-camp/a-day-before-the-end-of-boot-camp.md",
+    "bootcamp-eve/images/잔디.png",
+    "bootcamp-eve/images",
+    "bootcamp-eve",
     "test-post/test-post.md",
     "test-post",
     "a-day-before-the-end-of-boot-camp/images/잔디.png",
-    "a-day-before-the-end-of-boot-camp/a-day-before-the-end-of-boot-camp.md",
     "a-day-before-the-end-of-boot-camp/images",
     "부트캠프 끝나기 하루 전.md",
     "a-day-before-the-end-of-boot-camp.md",
