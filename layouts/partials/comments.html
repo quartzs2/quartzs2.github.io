@@ -1,12 +1,52 @@
 {{- if .Site.Params.comments }} {{- $utterances := .Site.Params.utterances }} {{- if $utterances }}
-<div class="comments">
-  <script
-    src="https://utteranc.es/client.js"
-    repo="{{ $utterances.repo }}"
-    issue-term="{{ $utterances.issueTerm }}"
-    theme="{{ $utterances.theme }}"
-    crossorigin="anonymous"
-    async
-  ></script>
+<div class="comments" id="comments">
+  <script>
+    (function () {
+      const commentsEl = document.getElementById("comments");
+      if (!commentsEl) return;
+
+      function themeName() {
+        return document.body.classList.contains("dark") ? "github-dark" : "github-light";
+      }
+
+      function loadUtterances() {
+        const existing = commentsEl.querySelector('script[src="https://utteranc.es/client.js"]');
+        if (existing) return;
+        const s = document.createElement("script");
+        s.src = "https://utteranc.es/client.js";
+        s.async = true;
+        s.setAttribute("repo", "{{ $utterances.repo }}");
+        s.setAttribute("issue-term", "{{ $utterances.issueTerm }}");
+        s.setAttribute("theme", themeName());
+        s.setAttribute("crossorigin", "anonymous");
+        commentsEl.appendChild(s);
+      }
+
+      function setUtterancesTheme() {
+        const iframe = document.querySelector("iframe.utterances-frame");
+        if (!iframe) return;
+        try {
+          iframe.contentWindow.postMessage(
+            { type: "set-theme", theme: themeName() },
+            "https://utteranc.es"
+          );
+        } catch (_) {}
+      }
+
+      loadUtterances();
+
+      const mo = new MutationObserver(setUtterancesTheme);
+      mo.observe(document.body, { attributes: true, attributeFilter: ["class"] });
+
+      const mq = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
+      if (mq && mq.addEventListener) {
+        mq.addEventListener("change", setUtterancesTheme);
+      } else if (mq && mq.addListener) {
+        mq.addListener(setUtterancesTheme);
+      }
+
+      window.addEventListener("load", setUtterancesTheme);
+    })();
+  </script>
 </div>
 {{- end }} {{- end -}}
