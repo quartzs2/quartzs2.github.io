@@ -112,7 +112,7 @@ disableSpecial1stPost = false
 disableScrollToTop = false
 
 # 댓글 기능을 사용할지 여부입니다. (true로 설정 시 추가 구성 필요)
-comments = false
+comments = true
 
 # 게시물의 메타 정보(날짜, 읽기 시간 등)를 숨길지 여부입니다.
 hidemeta = false
@@ -208,6 +208,12 @@ Content = "email: csh001231@gmail.com"
 name = "github"
 # 연결할 URL 주소입니다.
 url = "https://github.com/quartzs2"
+
+
+[params.utterances]
+repo = "quartzs2/github-blog-comments"
+issueTerm = "pathname"
+theme = "preferred-color-scheme"
 
 
 # --- 검색 엔진 사이트 인증 설정 (주석 처리됨) ---

@@ -1,0 +1,12 @@
+{{- if .Site.Params.comments }} {{- $utterances := .Site.Params.utterances }} {{- if $utterances }}
+<div class="comments">
+  <script
+    src="https://utteranc.es/client.js"
+    repo="{{ $utterances.repo }}"
+    issue-term="{{ $utterances.issueTerm }}"
+    theme="{{ $utterances.theme }}"
+    crossorigin="anonymous"
+    async
+  ></script>
+</div>
+{{- end }} {{- end -}}
