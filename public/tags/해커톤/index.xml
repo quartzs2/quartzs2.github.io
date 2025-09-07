@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>해커톤 on quartzs2의 blog</title>
+    <link>http://localhost:1313/tags/%ED%95%B4%EC%BB%A4%ED%86%A4/</link>
+    <description>Recent content in 해커톤 on quartzs2의 blog</description>
+    <image>
+      <title>quartzs2의 blog</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.148.2</generator>
+    <language>ko</language>
+    <lastBuildDate>Sun, 07 Sep 2025 18:24:14 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%ED%95%B4%EC%BB%A4%ED%86%A4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMAZON Q 해커톤 회고</title>
+      <link>http://localhost:1313/posts/aws-amazon-q-hackaton-retrospective/</link>
+      <pubDate>Sun, 07 Sep 2025 18:24:14 +0900</pubDate>
+      <guid>http://localhost:1313/posts/aws-amazon-q-hackaton-retrospective/</guid>
+      <description>&lt;p&gt;9/5 ~ 9/6 에 진행한 &lt;a href=&#34;https://qhackathon2025.site/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Amazon Q Developer 해커톤&lt;/a&gt;
+
+
+에 다녀왔어요.
+9/5는 온라인 진행이라 &lt;a href=&#34;https://turingapple.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;튜링의사과&lt;/a&gt;
+
+
+에서 모여서 진행했고, 9/6에는 AWS 사옥에서 오프라인으로 진행했어요.&lt;/p&gt;
+&lt;p&gt;튜링의 사과가 정말 좋았어요. 오픈채팅에서 이야기만 들어보다가 실제로 가보니까 정말 좋은 장소였어요. 자리마다 4K 모니터가 달려있고  기계식 키보드 사용가능한데다가 의자도 편했어요. 취업 성공하면 자주 가보고 싶네요.&lt;/p&gt;
+&lt;h2 id=&#34;시작-한-시간-전까지-정해진게-없었어요&#34;&gt;시작 한 시간 전까지 정해진게 없었어요&lt;/h2&gt;
+&lt;p&gt;선착순으로 참가자를 모집했기때문에, 주말까지 메일이 안오길래 사실 떨어진줄 알고 있었어요. 화요일 새벽 두시 정도에 참가 확정됐다고 메일이 왔던걸로 기억하는데, 팀원들 모두 바빠서 미리 뭘 따로 공부하거나 합을 미리 맞출 시간이 없었고 주제도 못 정한 상태였어요.
+저는 서울이랑 먼 곳에 살아서, 목요일에 서울 올라가고 저녁에 바이브코딩 관련 영상 세 네개 정도 찾아보고 잤던 것 같아요.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

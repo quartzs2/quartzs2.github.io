@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "123b51529b4523a9",
+        "id": "69d68ee0d73104ba",
         "type": "tabs",
         "children": [
           {
-            "id": "17257a391a21a2c7",
+            "id": "faeae4c62ecaca58",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -165,11 +165,14 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "17257a391a21a2c7",
+  "active": "faeae4c62ecaca58",
   "lastOpenFiles": [
+    "aws-amazon-q-hackaton-retrospective/index.md",
+    "aws-amazon-q-hackaton-retrospective/images/growlog.png",
+    "initial-content/index.md",
+    "aws-amazon-q-hackaton-retrospective/images",
     "bootcamp-eve/index.md",
     "initial-content/images/잔디.png",
-    "initial-content/index.md",
     "initial-content/images",
     "initial-content",
     "a-day-before-the-end-of-boot-camp/a-day-before-the-end-of-boot-camp.md",
