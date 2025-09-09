@@ -1,0 +1,6 @@
+# 프로덕션 환경 설정
+# Google Analytics 활성화
+googleAnalytics = "G-03B7GYGYJC"
+
+[params]
+env = "production"
