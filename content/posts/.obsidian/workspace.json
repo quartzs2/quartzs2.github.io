@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "69d68ee0d73104ba",
+        "id": "e6d77dea12bf88d4",
         "type": "tabs",
         "children": [
           {
-            "id": "faeae4c62ecaca58",
+            "id": "2f5ab8bc1fb464b2",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -165,8 +165,9 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "faeae4c62ecaca58",
+  "active": "2f5ab8bc1fb464b2",
   "lastOpenFiles": [
+    "modal-nextjs/index.md",
     "aws-amazon-q-hackaton-retrospective/index.md",
     "aws-amazon-q-hackaton-retrospective/images/growlog.png",
     "initial-content/index.md",

@@ -11,8 +11,50 @@
     </image>
     <generator>Hugo -- 0.148.2</generator>
     <language>ko</language>
-    <lastBuildDate>Sun, 24 Aug 2025 05:15:27 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 15 Oct 2025 01:40:11 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dorothy</title>
+      <link>http://localhost:1313/tags/dorothy/</link>
+      <pubDate>Wed, 15 Oct 2025 01:40:11 +0900</pubDate>
+      <guid>http://localhost:1313/tags/dorothy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>개인프로젝트</title>
+      <link>http://localhost:1313/tags/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</link>
+      <pubDate>Wed, 15 Oct 2025 01:40:11 +0900</pubDate>
+      <guid>http://localhost:1313/tags/%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>무한스크롤</title>
+      <link>http://localhost:1313/tags/%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4/</link>
+      <pubDate>Wed, 15 Oct 2025 01:40:11 +0900</pubDate>
+      <guid>http://localhost:1313/tags/%EB%AC%B4%ED%95%9C%EC%8A%A4%ED%81%AC%EB%A1%A4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AWS</title>
+      <link>http://localhost:1313/tags/aws/</link>
+      <pubDate>Sun, 07 Sep 2025 18:24:14 +0900</pubDate>
+      <guid>http://localhost:1313/tags/aws/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>해커톤</title>
+      <link>http://localhost:1313/tags/%ED%95%B4%EC%BB%A4%ED%86%A4/</link>
+      <pubDate>Sun, 07 Sep 2025 18:24:14 +0900</pubDate>
+      <guid>http://localhost:1313/tags/%ED%95%B4%EC%BB%A4%ED%86%A4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>회고</title>
+      <link>http://localhost:1313/tags/%ED%9A%8C%EA%B3%A0/</link>
+      <pubDate>Sun, 07 Sep 2025 18:24:14 +0900</pubDate>
+      <guid>http://localhost:1313/tags/%ED%9A%8C%EA%B3%A0/</guid>
+      <description></description>
+    </item>
     <item>
       <title>부트캠프</title>
       <link>http://localhost:1313/tags/%EB%B6%80%ED%8A%B8%EC%BA%A0%ED%94%84/</link>
@@ -25,13 +67,6 @@
       <link>http://localhost:1313/tags/%EC%98%A4%EC%A6%88%EC%BD%94%EB%94%A9%EC%8A%A4%EC%BF%A8/</link>
       <pubDate>Sun, 24 Aug 2025 05:15:27 +0900</pubDate>
       <guid>http://localhost:1313/tags/%EC%98%A4%EC%A6%88%EC%BD%94%EB%94%A9%EC%8A%A4%EC%BF%A8/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>회고</title>
-      <link>http://localhost:1313/tags/%ED%9A%8C%EA%B3%A0/</link>
-      <pubDate>Sun, 24 Aug 2025 05:15:27 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%ED%9A%8C%EA%B3%A0/</guid>
       <description></description>
     </item>
   </channel>
